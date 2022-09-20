@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ENCRIPTADOR - CHALLENGE ORACLE</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <main class="container">
+      <section class="container-content">
+        <div class="container-text">
+          <textarea
+            class="text-desencriptar"
+            name="inputEncriptar"
+            id="inputEncriptar"
+            placeholder="Ingrese el texto aquí"
+          ></textarea>
+          <p class="alert-disabled">
+            ¡Solo letras minúsculas, sin carácteres especiales y sin acentos!
+          </p>
+        </div>
+        <div class="container-buttons">
+          <a id="encriptar" class="btn-encriptar">Encriptar</a>
+          <a id="desencriptar" class="btn-desencriptar">Desencriptar</a>
+        </div>
+      </section>
+
+      <section class="container-resultado">
+        <article class="container-text-default">
+          <div>
+            <defs>
+              <clipPath id="clip0_2_1323">
+                <rect width="336" height="304" fill="white" />
+              </clipPath>
+            </defs>
+          </div>
+          <div class="container-text-encriptado">
+            <p>Ningún mensaje fué encontrado</p>
+            <p class="text-message-normal">
+              Ingrese el texto que desees encriptar o desencriptar.
+            </p>
+          </div>
+        </article>
+
+        <article class="container-context-resultado">
+          <p class="text-message-resultado"></p>
+          <a id="copiar" class="btn-copiar">Copiar</a>
+        </article>
+      </section>
+    </main>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
